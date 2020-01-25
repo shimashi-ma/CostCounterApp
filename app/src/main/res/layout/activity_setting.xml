@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="25dp"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="モノの名前"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mononame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+        <TextView
+            android:id="@+id/nedantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="買ったときの値段"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mononedan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/entext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/mononedan"
+                android:text="円"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hinichitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使いはじめた日"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/todaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020/00/00"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/calenderbutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/calendar"
+                android:layout_toEndOf="@+id/todaytext" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/memotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="メモ（任意）："
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/memobutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/note"
+                android:layout_toEndOf="@+id/memotext"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/imagetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="写真（任意）："
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/imagebutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image"
+                android:layout_toEndOf="@+id/imagetext"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="#8BC34A"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="#FFC107"
+                android:text="閉じる"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
